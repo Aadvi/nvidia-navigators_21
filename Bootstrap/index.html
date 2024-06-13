@@ -12,37 +12,60 @@
             height: 80px;
             width: 80px
         }
+
         /* circle button background hover effect */
         .c2:hover {
             background-color: rgba(29, 18, 18, 0.295);
             transform: scale(1.1);
-            
-           
+
+
 
         }
+
+
         /* circle background color and cursor */
         .c2 {
             background-color: rgb(245, 245, 245);
             cursor: pointer;
         }
+
         /* hovering effect when we point on whole circle and text div */
-        .c1:hover{
+        .c1:hover {
             text-decoration: underline;
         }
 
         .c1>p:hover {
             text-decoration: underline;
             transform: scale(1.1);
-            
+
         }
-        .c0{
+
+        .c0 {
             padding-left: 60px;
 
         }
-        .c3 h1{
+
+        .c3 h1 {
             font-weight: bolder;
             font-size: 45px;
             margin-left: 24px;
+        }
+
+        .zoomIn:hover {
+            transform: scale(1.01);
+        }
+
+        .button {
+            padding: 4px 10px 4px 10px;
+            border-radius: 5px;
+            color: rgb(10, 10, 10);
+            background-color: transparent;
+        }
+
+        .button:hover {
+            background-color: black;
+            color: antiquewhite;
+            transition: 0.6s;
         }
     </style>
 
@@ -58,7 +81,7 @@
 
         <div class="d-flex bg-white gap-5 py-3 c0">
             <!-- explore tag container and inside it flex-coulmn for image and p -->
-            <div class="d-flex flex-column gap-2  align-items-center c1 ">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1 ">
                 <!-- image and text written -->
                 <div class="d-flex align-items-center justify-content-center c2   rounded-circle">
                     <img src="https://p1-ofp.static.pub//fes/cms/2024/01/11/anrz8ak2s1hxlwvl4ysnclt2wb00q4128331.svg"
@@ -66,49 +89,49 @@
                 </div>
                 <p>PCs & Tablets</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1 ">
+            <div class="d-flex flex-column gap-2  text-center align-items-center c1 ">
                 <div class="d-flex align-items-center justify-content-center  c2  rounded-circle">
                     <img src="https://p2-ofp.static.pub//fes/cms/2024/02/14/q4id5cl30ov01khxn8blbvdmnmjszq777538.svg"
                         alt="">
                 </div>
                 <p>Accessories & Monitors</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1  ">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1  ">
                 <div class="d-flex align-items-center justify-content-center  c2  rounded-circle">
                     <img src="https://p3-ofp.static.pub//fes/cms/2024/01/11/galbbebsq4g1aq80hgnyzqlvrpz5xf472573.svg"
                         alt="">
                 </div>
                 <p>Phones</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1 ">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1 ">
                 <div class="d-flex align-items-center justify-content-center c2   rounded-circle">
                     <img src="https://p4-ofp.static.pub//fes/cms/2024/01/11/4zmt5hd9hq0orm9zaz4n0xfiugjl97589917.svg"
                         alt="">
                 </div>
                 <p>Servers & Storage</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1 ">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1 ">
                 <div class="d-flex align-items-center justify-content-center c2   rounded-circle">
                     <img src="https://p1-ofp.static.pub//fes/cms/2024/01/11/2jplulnha7efc8bodhrw0b2sygg4jh044220.svg"
                         alt="">
                 </div>
                 <p>Solutions & Services</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1 ">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1 ">
                 <div class="d-flex align-items-center justify-content-center c2  rounded-circle">
                     <img src="https://p4-ofp.static.pub//fes/cms/2024/01/11/qwcst99hmak5kqf8id45l3motc9hov132668.svg"
                         alt="">
                 </div>
                 <p>Support</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1">
                 <div class="d-flex align-items-center justify-content-center  c2  rounded-circle">
                     <img src="https://p2-ofp.static.pub//fes/cms/2024/01/11/mce3jlcxfy9bwpacddp66riwxbtn7i277198.svg"
                         alt="">
                 </div>
                 <p>About Lenovo</p>
             </div>
-            <div class="d-flex flex-column gap-2  align-items-center c1 ">
+            <div class="d-flex flex-column gap-2 text-center align-items-center c1 ">
                 <div class="d-flex align-items-center justify-content-center c2   rounded-circle">
                     <img src="https://p2-ofp.static.pub//fes/cms/2024/01/11/2ehfwodqqozvcd0x04xg5ll4lvvt6v994178.svg"
                         alt="">
@@ -116,9 +139,53 @@
                 <p>Deals</p>
             </div>
 
+            <!-- second section of explore our range -->
+        </div>
+        <div class="container-fluid bg-light d-flex flex-column">
+            <div class="d-flex  flex-column py-4 c3 ">
+                <h1>Explore Our Range</h1>
+                <p style="margin-left: 24px;">OUR PRODUCTS</p>
+            </div>
+            <!-- taken cards bootsrap container -->
+            <div class=" d-flex gap-3">
+
+                <div class="card zoomIn" style="width: 28rem; ">
+                    <img style="height: 12rem;"
+                        src="https://p4-ofp.static.pub/ShareResource/na/homepage/merchandising-card/lenovo-thinkpad-x1-carbon-gen10.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body t1">
+                        <h2 class="card-title">PC & Tablets</h2>
+                        <p class="card-text">Explore traditional & 2-in-1 laptops, customisable options and more.</p>
+                        <button class="button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="card zoomIn" style="width: 28rem; ">
+                    <img style="height: 12rem;"
+                        src="https://p3-ofp.static.pub/ShareResource/na/homepage/espots/lenovo-office-work-monitor-2023.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h2 class="card-title">Monitors</h2>
+                        <p class="card-text">Explore traditional & 2-in-1 laptops, customisable options and more.</p>
+
+                        <button class="button">Shop Monitors</button>
+                    </div>
+                </div>
+                <div class="card   zoomIn" style="width: 28rem ;  ">
+                    <img style="height: 12rem;"
+                        src="https://p2-ofp.static.pub//fes/cms/2024/01/05/uoc9artvj3ihjl9awgauu75x723nif913872.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h3 class="card-title">Accessories & and software</h3>
+                        <p class="card-text">Combine your laptop purchase with accessories, tech gadgets and software.
+                        </p>
+
+                        <button class="button">Shop Accessories</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+
 
 
 </body>
