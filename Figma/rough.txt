@@ -1,0 +1,19 @@
+/* Heading 2 → We Make */
+
+position: absolute;
+width: 344.08px;
+height: 104px;
+left: 15px;
+top: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 39.375px;
+line-height: 52px;
+/* or 132% */
+display: flex;
+align-items: center;
+
+color: #05073C;
+
