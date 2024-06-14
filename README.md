@@ -5,7 +5,7 @@ This is a simple front-end layout built with HTML, CSS, and Bootstrap, which is 
 
 ## Technologies Used
 - BootStrap: Bootstrap is a powerful feature-packed toolkit. You can take any components directly from Bootstrap. It helps you to develop your layout with ease from prototype to production.
-- CSS: Cascading Style Sheets (CSS) are used to style the calculator and enhance its visual appeal.
+- CSS: Cascading Style Sheets (CSS) are used to style the website and enhance its visual appeal.
 <br>
 
 
