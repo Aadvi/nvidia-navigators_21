@@ -127,17 +127,31 @@
         text-decoration: none;
         color: #ffffff;
       }
+      .travel-destinations {
+        position: relative;
+      }
+      .marquee-trending {
+            display: inline-block;
+            padding: 0 20px; /* Add some spacing between the divs */
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
     </style>
   </head>
   <body>
     <!-- Aaditya's Code -->
 
     <!-- Swarnali's Code -->
+
     <!-- WE MAKE WORLD SECTION -->
     <div
       class="we-make-world"
       style="
-        border: 1px solid;
+        border: 2px solid;
         border-radius: 12px;
         height: 750px;
         width: 1320px;
@@ -146,7 +160,7 @@
     >
       <img src="./assets/weMakeWorldBg.jpg" alt="" />
       <!-- We Make World box -->
-      <div class="overlay-we-make" style="border: 1px solid">
+      <div class="overlay-we-make">
         <div>We Make World Travel Easy</div>
         <div>
           Traveling under your own power and at your own pace, you'll connect
@@ -286,14 +300,14 @@
         <img
           src="./assets/3.svg.jpg"
           alt="3"
-          style="/* 2.svg */
+          style="
+            /* 2.svg */
 
-          position: absolute;
-          width: 60px;
-          height: 60px;
-          left: calc(50% - 60px/2);
-          top: calc(50% - 60px/2 - 50px);
-          
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: calc(50% - 60px / 2);
+            top: calc(50% - 60px / 2 - 50px);
           "
         />
         <div
@@ -346,6 +360,285 @@
         </div>
       </div>
     </div>
+    <!-- END OF WE MAKE WORLD SECTION -->
+
+    <!-- TRENDING DESTINATIONS SECTION -->
+    <div
+      class="travel-destinations"
+      style="
+        border: 2px solid;
+        width: 1320px;
+        height: 393.25px;
+        margin: 115px auto 105px auto;
+      "
+    >
+      <!-- "Trending Destinations" text-->
+      <div
+        style="
+          /* Heading 2 → Trending Destinations */
+
+          position: absolute;
+          width: 322.48px;
+          height: 45px;
+          left: 15px;
+          top: 5px;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 29.7656px;
+          line-height: 45px;
+          /* identical to box height, or 151% */
+          display: flex;
+          align-items: center;
+
+          color: #05073c;
+        "
+      >
+        Trending Destinations
+      </div>
+      <!-- "See all" text -->
+      <div
+        style="
+          /* Link → See all */
+
+          position: absolute;
+          width: 44.79px;
+          height: 28.13px;
+          left: 1234.41px;
+          top: 21.88px;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14.2969px;
+          line-height: 28px;
+          /* identical to box height, or 197% */
+          display: flex;
+          align-items: center;
+
+          color: #05073c;
+        "
+      >
+        See all
+      </div>
+
+      <!-- imgaes -->
+      <div
+        class="marquee-trending"
+        style="
+          max-width: 1320px;
+          height: 298.25px;
+          margin: 95px auto auto auto;
+          padding: 0px 15px 0px 15px;
+          display: flex;
+          justify-content: space-between;
+        "
+      >
+        <!-- 1st image -->
+        <div style="height: 298.25px; width: 190px">
+          <img
+            src="./assets/travel-desti-1.jpg"
+            alt="1"
+            style="width: 190px; height: 210px; border-radius: 12px"
+          />
+          <div
+            style="
+              width: 41px;
+              height: 27px;
+              font-family: inter;
+              font-size: 17.16px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
+            "
+          >
+            Paris
+          </div>
+          <div
+            style="
+              width: 70.29px;
+              height: 18px;
+              font-family: inter;
+              font-size: 13.23px;
+              font-weight: 400;
+              line-height: 26.25px;
+              text-align: left;
+            "
+          >
+            100+ Tours
+          </div>
+        </div>
+        <!-- end of first image -->
+        <div style="height: 298.25px; width: 190px">
+          <img
+            src="./assets/travel-desti-1.jpg"
+            alt="1"
+            style="width: 190px; height: 210px; border-radius: 12px"
+          />
+          <div
+            style="
+              width: 41px;
+              height: 27px;
+              font-family: inter;
+              font-size: 17.16px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
+            "
+          >
+            Paris
+          </div>
+          <div
+            style="
+              width: 70.29px;
+              height: 18px;
+              font-family: inter;
+              font-size: 13.23px;
+              font-weight: 400;
+              line-height: 26.25px;
+              text-align: left;
+            "
+          >
+            100+ Tours
+          </div>
+        </div>
+        <div style="height: 298.25px; width: 190px">
+          <img
+            src="./assets/travel-desti-1.jpg"
+            alt="1"
+            style="width: 190px; height: 210px; border-radius: 12px"
+          />
+          <div
+            style="
+              width: 41px;
+              height: 27px;
+              font-family: inter;
+              font-size: 17.16px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
+            "
+          >
+            Paris
+          </div>
+          <div
+            style="
+              width: 70.29px;
+              height: 18px;
+              font-family: inter;
+              font-size: 13.23px;
+              font-weight: 400;
+              line-height: 26.25px;
+              text-align: left;
+            "
+          >
+            100+ Tours
+          </div>
+        </div>
+        <div style="height: 298.25px; width: 190px">
+          <img
+            src="./assets/travel-desti-1.jpg"
+            alt="1"
+            style="width: 190px; height: 210px; border-radius: 12px"
+          />
+          <div
+            style="
+              width: 41px;
+              height: 27px;
+              font-family: inter;
+              font-size: 17.16px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
+            "
+          >
+            Paris
+          </div>
+          <div
+            style="
+              width: 70.29px;
+              height: 18px;
+              font-family: inter;
+              font-size: 13.23px;
+              font-weight: 400;
+              line-height: 26.25px;
+              text-align: left;
+            "
+          >
+            100+ Tours
+          </div>
+        </div>
+        <div style="height: 298.25px; width: 190px">
+          <img
+            src="./assets/travel-desti-1.jpg"
+            alt="1"
+            style="width: 190px; height: 210px; border-radius: 12px"
+          />
+          <div
+            style="
+              width: 41px;
+              height: 27px;
+              font-family: inter;
+              font-size: 17.16px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
+            "
+          >
+            Paris
+          </div>
+          <div
+            style="
+              width: 70.29px;
+              height: 18px;
+              font-family: inter;
+              font-size: 13.23px;
+              font-weight: 400;
+              line-height: 26.25px;
+              text-align: left;
+            "
+          >
+            100+ Tours
+          </div>
+        </div>
+        <div style="height: 298.25px; width: 190px">
+          <img
+            src="./assets/travel-desti-1.jpg"
+            alt="1"
+            style="width: 190px; height: 210px; border-radius: 12px"
+          />
+          <div
+            style="
+              width: 41px;
+              height: 27px;
+              font-family: inter;
+              font-size: 17.16px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
+            "
+          >
+            Paris
+          </div>
+          <div
+            style="
+              width: 70.29px;
+              height: 18px;
+              font-family: inter;
+              font-size: 13.23px;
+              font-weight: 400;
+              line-height: 26.25px;
+              text-align: left;
+            "
+          >
+            100+ Tours
+          </div>
+        </div>
+      </div>
+      <!-- END OF images -->
+    </div>
+    <!-- END OF TRENDING DESTINATIONS SECTION -->
 
     <!-- Akshay's Code -->
 
