@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @keyframes anim1{
+            0%{
+                transform: scale(0.1);
+            }
+            50%{
+                transform: scale(2.5);
+            }
+            100%{
+                transform: scale(0.1);
+            }
+        }
         .body {
             margin: 0px;
             padding: 0px;
@@ -47,7 +59,7 @@
 
         }
 
-        .container>div:nth-of-type(3) {
+        .container>div:nth-of-type(3) h3 {
             width: 149.65px;
             height: 33.75px;
             color: #EB662B;
@@ -57,12 +69,13 @@
             line-height: 33.75px;
             text-align: center;
             margin-left: 870px;
+            margin-top:50px;
 
 
 
         }
 
-        .container>div:nth-of-type(4) {
+        .container>div:nth-of-type(4) h3 {
             width: 604.59px;
             height: 101px;
 
@@ -102,6 +115,7 @@
             line-height: 105px;
             text-align: center;
             color: white;
+            animation: anim1 4s infinite;
 
 
         }
@@ -130,7 +144,9 @@
             margin-left: 860px;
             width: 267.33px;
             height: 45px;
-
+            transform: scale(3S);
+            
+            
             font-family: Inter;
             font-size: 29.3px;
             font-weight: 700;
@@ -236,6 +252,12 @@
 
 
         }
+        .c1>div:hover{
+            transform: scale(1.2);
+        }
+        .c2>div:hover{
+            transform: scale(1.01);
+        }
     </style>
 </head>
 
@@ -243,18 +265,18 @@
     <div class="container">
         <div>
             <h2>Customer Reviews</h2>
-            <!-- <img style="margin-left: 900px; " src="./image (1).jpg" alt=""> -->
+            <img style="margin-left: 900px; margin-top:50px ; " src="./image (1).jpg" alt="">
             
         </div>
         
-        <!-- <div class="c2">
+        <div class="c2">
             
-        </div> -->
+        </div>
 
-        <div>Excellent Service!</div>
-        <div>I had an amazing experience with this company. The service was
+        <div><h3>Excellent Service!</h3></div>
+        <div><h3>I had an amazing experience with this company. The service was
             top-notch, and the staff was incredibly friendly. I highly
-            recommend them!</div>
+            recommend them!</h3></div>
         <div>
             <h1>Keep things flexible</h1>
             <h4>Use Reserve Now & Pay Later to secure the activities you
