@@ -1,0 +1,15 @@
+<!-- LOCATOR SYMBOL -->
+        <div class="dropdown">
+          <div
+            class="material-symbols-outlined"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="padding-top: 7px; padding-right: 10px"
+          >
+            distance
+          </div>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Locator</a></li>
+          </ul>
+        </div>
