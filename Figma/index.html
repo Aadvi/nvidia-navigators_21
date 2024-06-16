@@ -10,13 +10,10 @@
         cursor: pointer;
         font-weight: bolder;
       }
-      .grid-container-top-attractions > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
+      .grid-container-top-attractions > div:hover {
+        transform: scale(1.12);
+        color: #EB662B;
+        font-style: bold;
       }
     </style>
   </head>
@@ -155,28 +152,354 @@
       <div
         class="grid-container-top-attractions"
         style="
-          border: 2px solid;
-          width: 1320px;
+          display: grid;
+          width: 1300px;
           height: 375px;
           margin-top: 95px;
+          margin-left: 15px;
           padding: 0px, 15px, 15px, 15px;
           position: absolute;
 
-          display: grid;
           grid-template-columns: repeat(3, 410px);
           grid-template-rows: repeat(3, 100px);
-          gap: 10px; /* Optional: adds space between the grid items */
+          gap: 30px; /* Optional: adds space between the grid items */
         "
       >
-        <div class="grid-item-ta">1</div>
-        <div class="grid-item-ta">2</div>
-        <div class="grid-item-ta">3</div>
-        <div class="grid-item-ta">4</div>
-        <div class="grid-item-ta">5</div>
-        <div class="grid-item-ta">6</div>
-        <div class="grid-item-ta">7</div>
-        <div class="grid-item-ta">8</div>
-        <div class="grid-item-ta">9</div>
+        <!-- 1st image of top attractions -->
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Colosseum.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Colosseum
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <!-- END of 1st image of top attractions -->
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Statue of Liberty.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Statue of Liberty
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Vatican Museums.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Vatican Museums
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Eiffel Tower.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Eiffel Tower
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Tower of London.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Tower of London
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/National September 11 Memorial.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 250px;">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              National September 11 Memorial
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Stonehenge.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Stonehenge
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Antelope Canyon.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Antelope Canyon
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
+        <div
+          class="grid-item-ta"
+          style="gap: 30px; display: flex; align-items: center"
+        >
+          <img
+            src="./assets/Louvre.png"
+            alt="1"
+            style="height: 100px; width: 100px"
+          />
+          <div style="height: 50px; width: 150px">
+            <!-- destination & total no. of tours -->
+            <div
+              style="
+                margin-bottom: 4px;
+                font-family: Inter;
+                font-size: 17.72px;
+                font-weight: 500;
+                line-height: 27px;
+                text-align: left;
+              "
+            >
+              Louvre
+            </div>
+            <div
+              style="
+                font-family: Inter;
+                font-size: 13.23px;
+                font-weight: 400;
+                line-height: 26.25px;
+                text-align: left;
+              "
+            >
+              100+ Tours
+            </div>
+            <!-- END of destination & total no. of tours -->
+          </div>
+        </div>
       </div>
       <!-- images section END -->
     </div>
