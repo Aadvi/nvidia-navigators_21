@@ -15,6 +15,28 @@
         color: #EB662B;
         font-style: bold;
       }
+      .orange-box{
+        scale: 0.5;
+        opacity: 0;
+        animation: fade linear forwards;
+        animation-timeline: scroll();
+        animation-range: 0px 50vh;
+      }
+
+      .top-attractions>div{
+        height: 200vh;
+        scale: 0.8;
+        opacity: 0;
+        animation: fade linear forwards;
+        animation-timeline: scroll();
+        animation-range: 0px 50vh;
+      }
+      @keyframes fade{
+        100%{
+          scale: 1;
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
