@@ -5,27 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        @keyframes anim1{
-            0%{
-                transform: scale(0.1);
+
+        
+
+        @keyframes anim1 {
+            0% {
+                transform: scale(0.01);
             }
-            50%{
+
+            50% {
                 transform: scale(2.5);
             }
-            100%{
-                transform: scale(0.1);
+
+            100% {
+                transform: scale(0.01);
             }
         }
+        /*scroll animation*/
+        @keyframes anim2 {
+        from{
+            scale: .8; opacity:0;
+        }
+        to{
+            scale: 1.2; opacity: 1;
+        }
+       }
+
         .body {
             margin: 0px;
             padding: 0px;
+            height: 200vh;
         }
 
         .container {
             max-width: 1920px;
             margin: auto;
+            
 
 
 
@@ -52,10 +71,13 @@
 
         }
 
-
+       
 
         .c2>img {
             margin-left: 893px;
+            animation: anim2;
+            animation-timeline: view();
+
 
         }
 
@@ -69,7 +91,7 @@
             line-height: 33.75px;
             text-align: center;
             margin-left: 870px;
-            margin-top:50px;
+            margin-top: 50px;
 
 
 
@@ -145,8 +167,8 @@
             width: 267.33px;
             height: 45px;
             transform: scale(3S);
-            
-            
+
+
             font-family: Inter;
             font-size: 29.3px;
             font-weight: 700;
@@ -163,6 +185,8 @@
             display: flex;
             justify-content: space-around;
             margin-left: 300px;
+           
+            
 
 
         }
@@ -171,12 +195,13 @@
             margin-left: 70px;
             width: 60px;
             height: 60px;
-
+            
 
         }
 
         .c1>div {
             justify-content: center;
+            
         }
 
         .c1 h4 {
@@ -238,7 +263,7 @@
 
         }
 
-       
+
 
         .c2>h4 {
             font-family: Inter;
@@ -252,31 +277,64 @@
 
 
         }
-        .c1>div:hover{
-            transform: scale(1.2);
+
+        .c1>div:hover {
+            transform: scale(1.1);
+            transition: 1s;
         }
-        .c2>div:hover{
-            transform: scale(1.01);
+
+        .c2>div:hover {
+            transform: scale(1.1);
+            transition: 1s;
         }
+
+        .boot {
+            margin-left: 860px;
+        }
+       
     </style>
 </head>
 
 <body>
+    
     <div class="container">
         <div>
             <h2>Customer Reviews</h2>
-            <img style="margin-left: 900px; margin-top:50px ; " src="./image (1).jpg" alt="">
-            
-        </div>
-        
-        <div class="c2">
-            
+            <img style="margin-left: 650px; margin-top:50px;  "
+                src="https://media.istockphoto.com/id/1447969085/photo/business-people-using-smartphone-and-pressing-review-popup-on-visual-screen-customer-review.jpg?s=612x612&w=0&k=20&c=LEAGseFr_Pvg0l1EWeynEuGoRspCBhTJ2Q567n6P4Uk="
+                alt="">
+
+
+
+
         </div>
 
-        <div><h3>Excellent Service!</h3></div>
-        <div><h3>I had an amazing experience with this company. The service was
-            top-notch, and the staff was incredibly friendly. I highly
-            recommend them!</h3></div>
+        <div style="margin-top: 10px;" class="boot">
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">1</span>
+            </div>
+            <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">2</span>
+            </div>
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">3</span>
+            </div>
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">4</span>
+            </div>
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">5</span>
+            </div>
+        </div>
+
+        <div>
+            <h3>Excellent Service!</h3>
+        </div>
+        <div>
+            <h3>I had an amazing experience with this company. The service was
+                top-notch, and the staff was incredibly friendly. I highly
+                recommend them!</h3>
+        </div>
         <div>
             <h1>Keep things flexible</h1>
             <h4>Use Reserve Now & Pay Later to secure the activities you
