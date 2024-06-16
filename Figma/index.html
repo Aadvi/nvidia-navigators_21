@@ -10,6 +10,14 @@
         cursor: pointer;
         font-weight: bolder;
       }
+      .grid-container-top-attractions > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
     </style>
   </head>
   <body>
@@ -85,64 +93,93 @@
     <div
       class="top-attractions"
       style="
-      position: relative;
-        border: 2px solid;
+        position: relative;
         width: 1320px;
         height: 470px;
         margin: 0px auto 105px auto;
       "
     >
-    <!-- "Top Attraction" text-->
-    <div
-      style="
-        /* Heading 2 → Trending Destinations */
+      <!-- "Top Attraction" text-->
+      <div
+        style="
+          /* Heading 2 → Trending Destinations */
 
-        position: absolute;
-        width: 322.48px;
-        height: 45px;
-        left: 15px;
-        top: 5px;
+          position: absolute;
+          width: 322.48px;
+          height: 45px;
+          left: 15px;
+          top: 5px;
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 29.7656px;
-        line-height: 45px;
-        /* identical to box height, or 151% */
-        display: flex;
-        align-items: center;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 29.7656px;
+          line-height: 45px;
+          /* identical to box height, or 151% */
+          display: flex;
+          align-items: center;
 
-        color: #05073c;
-      "
-    >
-      Top Attractions
+          color: #05073c;
+        "
+      >
+        Top Attractions
+      </div>
+      <!-- "Top Attraction" text END -->
+      <!-- "See all" text -->
+      <div
+        style="
+          /* Link → See all */
+
+          position: absolute;
+          width: 44.79px;
+          height: 28.13px;
+          left: 1234.41px;
+          top: 21.88px;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14.2969px;
+          line-height: 28px;
+          /* identical to box height, or 197% */
+          display: flex;
+          align-items: center;
+
+          color: #05073c;
+        "
+      >
+        See all
+      </div>
+      <!-- "See all" text END -->
+      <!-- images section start -->
+      <div
+        class="grid-container-top-attractions"
+        style="
+          border: 2px solid;
+          width: 1320px;
+          height: 375px;
+          margin-top: 95px;
+          padding: 0px, 15px, 15px, 15px;
+          position: absolute;
+
+          display: grid;
+          grid-template-columns: repeat(3, 410px);
+          grid-template-rows: repeat(3, 100px);
+          gap: 10px; /* Optional: adds space between the grid items */
+        "
+      >
+        <div class="grid-item-ta">1</div>
+        <div class="grid-item-ta">2</div>
+        <div class="grid-item-ta">3</div>
+        <div class="grid-item-ta">4</div>
+        <div class="grid-item-ta">5</div>
+        <div class="grid-item-ta">6</div>
+        <div class="grid-item-ta">7</div>
+        <div class="grid-item-ta">8</div>
+        <div class="grid-item-ta">9</div>
+      </div>
+      <!-- images section END -->
     </div>
-    <!-- "See all" text -->
-    <div
-      style="
-        /* Link → See all */
-
-        position: absolute;
-        width: 44.79px;
-        height: 28.13px;
-        left: 1234.41px;
-        top: 21.88px;
-
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14.2969px;
-        line-height: 28px;
-        /* identical to box height, or 197% */
-        display: flex;
-        align-items: center;
-
-        color: #05073c;
-      "
-    >
-      See all
-    </div>
-  </div>
     <!-- END of top-attractions section -->
   </body>
 </html>
