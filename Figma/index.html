@@ -10,7 +10,21 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-        
+        /* Example media query for smaller screens */
+@media (max-width: 992px) {
+  .container > div > h2 {
+    margin-left: 0; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Example adjustment for the .c1 and .c2 sections */
+@media (max-width: 768px) {
+  .c1, .c2 {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin-left: 0; /* Reset left margin for stacking */
+  }
+}
+
 
         @keyframes anim1 {
             0% {
