@@ -328,6 +328,397 @@
         position: absolute;
         left: 10%; /* Center the line horizontally */
       }
+      .carousel-container {
+      position: relative;
+      /* width: 100%; */
+      max-width: 2000px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 20px;
+      margin: auto;
+      flex-direction: column;
+      
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+      transition: transform 0.6s ease-in-out;
+      
+    }
+
+    .carousel-item {
+      flex: 1 0 100%;
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      padding-left: 10px;
+      gap: 30px;
+      align-items: center;
+      padding-bottom: 15px;
+      
+    }
+
+    .item-div {
+      width: 16%;
+      height: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #ccc;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      color: #000;
+      transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+      text-indent: 0px;
+      border: 1px solid rgba(29, 18, 18, 0.1) ;
+    }
+
+    .item-div:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    }
+
+    .img_container1,
+    .img_container2,
+    .img_container3,
+    .img_container4,
+    .img_container5,
+    .img_container6,
+    .img_container7 {
+      width: 100%;
+      height: 250px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .img_container1 {
+      background-image: url("https://p1-ofp.static.pub//fes/cms/2024/01/11/dbt0kh7ppbua17wdnqx5490ne46q1u539090.jpg");
+    }
+
+    .img_container2 {
+      background-image: url("https://p3-ofp.static.pub//fes/cms/2024/01/11/vm5pvv4xxra9am9thbv70yovtrljtj701357.jpg");
+    }
+
+    .img_container3 {
+      background-image: url("https://p1-ofp.static.pub//fes/cms/2024/01/11/z3zurbkyu8ddlzs6vn3ys0htgjkdvs929646.jpg");
+    }
+
+    .img_container4 {
+      background-image: url("https://p3-ofp.static.pub//fes/cms/2024/01/11/qqhm9lxzummm1m3hdgbt4ikdwdyhhq272623.jpg");
+    }
+
+    .img_container5 {
+      background-image: url("https://p3-ofp.static.pub//fes/cms/2024/01/11/lx5rcy77t3x6cor7cei0j4rtc79sw9977126.png");
+    }
+
+    .img_container6 {
+      background-image: url("https://p2-ofp.static.pub//fes/cms/2024/01/11/w8ux7di1bte33iteruegyvpvbtuao0805664.jpg");
+    }
+
+    .img_container7 {
+      background-image: url("https://p2-ofp.static.pub//fes/cms/2024/01/11/o3vd61l5amo24r7x01bjlexa2wmpb1861378.jpg");
+    }
+
+    .btn-prev,
+    .btn-next {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      margin: 0px 30px;
+      transform: translateY(-50%);
+      background-color: rgb(0, 0, 0);
+      color: #ffffff;
+      border: 5px;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    .btn-prev {
+      left: 10px;
+    }
+
+    .btn-next {
+      right: 10px;
+    }
+
+    .details {
+      width: 100%;
+      height: 30vh;
+      padding: 15px;
+      background-color: rgb(246, 246, 246);
+      padding-bottom: 10px;
+    }
+
+    .details>h1 {
+      font-size: 40px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      padding-bottom: 10px;
+    }
+
+    .details>p {
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      padding-bottom: 5px;
+      text-wrap: wrap;
+    }
+
+    .details>button {
+      margin-left: 10px;
+    }
+
+    .cont {
+      width: 100%;
+      padding: 20px;
+      text-indent: 15px;
+      row-gap: 30px;
+    }
+
+    .cont>h1 {
+      font-size: 60px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 600;
+    }
+
+    .cont>p {
+      font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+    }
+
+    .card-img-top {
+      height: 50px;
+      object-fit: cover;
+      width: calc(100% + 40px);
+      box-shadow: inset;
+    }
+
+    .custom-card {
+      overflow: hidden;
+      width: 108%;
+      border: #000;
+      box-shadow: 5px;
+    }
+
+    .custom-col {
+      width: 40%;
+      height: 20vh;
+      margin-bottom: 50px;
+    }
+
+    .div {
+      width: 100%;
+      margin-left: 25px;
+      padding: 10px;
+      display: flex;
+      column-gap: 25px;
+    }
+
+    .co_container {
+      height: 20vh;
+      width: 100%;
+      background-color: red;
+    }
+
+    .inf-div {
+      width: 48%;
+    }
+
+    /* mobile phone responsive ness */
+    @media (max-width:420px) {
+      .cont {
+        padding: 0px;
+        text-indent: 0px;
+        /* background-color: red; */
+        row-gap: 30px;
+      }
+
+      .cont>h1 {
+        font-size: 24px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        /* background-color: red; */
+        text-indent: 50px;
+      }
+
+      .cont>p {
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        /* background-color: rgb(7, 230, 74); */
+
+      }
+
+      .div {
+        width: auto;
+        display: block;
+        /* background-color: blue; */
+        padding: 18px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+
+      .inf-div {
+        width: 100%;
+      }
+
+      .details {
+        width: 100%;
+        height: 28vh;
+        padding: 6px;
+        background-color: rgb(246, 246, 246);
+      }
+
+      .details>h1 {
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 0px;
+      }
+
+      .details>p {
+        padding-bottom: 0px;
+        text-wrap: wrap;
+      }
+
+      .carousel-container {
+        position: relative;
+        border-radius: 0px;
+        padding: 65px;
+        margin: auto;
+        /* background-color: blue; */
+        flex-direction: column;
+        width: 95%;
+      }
+
+      .carousel-slide {
+        display: flex;
+        flex-direction: column;
+        width: 160%;
+      }
+
+      .carousel-item {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+
+      }
+
+      .item-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        color: #000;
+      }
+    }
+
+    /* tablet responsive ness */
+    @media (max-width:768px) {
+      .cont {
+        padding: 0px;
+        text-indent: 0px;
+        /* background-color: rgb(55, 0, 255); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cont>h1 {
+        font-size: 32px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        /* background-color: red; */
+        margin: 0px;
+
+      }
+
+      .cont>p {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        /* background-color: rgb(7, 230, 74); */
+        margin: 0px;
+        margin-top: -30px;
+
+      }
+
+      .div {
+        width: 100%;
+        margin-left: 10px;
+        padding: 0px;
+        display: flex;
+        column-gap: 10px;
+      }
+
+      .details {
+        width: 110%;
+        height: 30vh;
+        padding: 10px;
+        background-color: rgb(246, 246, 246);
+      }
+
+      .details>h1 {
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        padding-bottom: 0px;
+      }
+
+      .details>p {
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        padding-bottom: 5px;
+        text-wrap: wrap;
+        margin: 0px;
+      }
+
+      .carousel-container {
+        border-radius: 0px;
+        display: flex;
+        padding: 30px;
+        margin: auto;
+        padding: 70px;
+        /* background-color: blue; */
+        margin-left: 0px;
+      }
+
+      .carousel-slide {
+        width: 110%;
+        /* background-color: green; */
+        margin-left: -50px;
+      }
+
+      .h2,
+      h2 {
+        font-size: 22px;
+      }
+
+      .details>button {
+        font-size: 15px;
+        margin-left: 0px;
+        padding: 7px;
+      }
+    }
     </style>
   </head>
   <body>
@@ -833,6 +1224,90 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class = "container-fluid">
+      <div class="cont">
+        <div class="cont animate__animated animate__fadeIn">
+          <h1>Infrastructure Solutions</h1>
+          <p>IMPROVE YOUR RESULTS WITH DATA CENTER AND AI SOLUTIONS</p>
+        </div>
+        <div class="div animate__animated animate__fadeIn">
+          <div class="item-div inf-div">
+            <div class="img_container6"></div>
+            <div class="details">
+              <h1>Servers & Storage</h1>
+              <p>Find AI, edge, cloud, storage solutions, and more</p>
+              <button type="button" class="btn btn-outline-dark btn-light btn-lg">Learn More</button>
+            </div>
+          </div>
+          <div class="item-div inf-div">
+            <div class="img_container7"></div>
+            <div class="details">
+              <h1>Lenovo AI for All</h1>
+              <p>We bring AI to your data where and when you need it</p>
+              <button type="button" class="btn btn-outline-dark btn-light btn-lg">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="cont">
+          <h1>Services & Solutions</h1>
+          <p>UNLEASH THE FULL POWER OF TECHNOLOGIES</p>
+        </div>
+  
+        <div class="carousel-container">
+          <div class="carousel-container animate__animated animate__fadeIn">
+  
+            <div class="carousel-slide">
+              <div class="carousel-item">
+                <div class="item-div">
+                  <div class="img_container1"></div>
+                  <div class="details">
+                    <h3>PC Services</h3>
+                    <p>Enhance productivity, security, and collaboration</p>
+                    <button type="button" class="btn btn-outline-dark btn-light btn-lg">Learn More</button>
+                  </div>
+                </div>
+                <div class="item-div">
+                  <div class="img_container2"></div>
+                  <div class="details">
+                    <h3>Digital Workplace Solutions</h3>
+                    <p>Offer smart solutions enable employees to focus on meaningful work</p>
+                    <button type="button" class="btn btn-outline-dark btn-light btn-lg">Learn More</button>
+                  </div>
+                </div>
+                <div class="item-div">
+                  <div class="img_container3"></div>
+                  <div class="details">
+                    <h3>Premier Support Plus</h3>
+                    <p>Boost productivity and employee experience with a single solution</p>
+                    <button type="button" class="btn btn-outline-dark btn-light btn-lg">Learn More</button>
+                  </div>
+                </div>
+                <div class="item-div">
+                  <div class="img_container4"></div>
+                  <div class="details">
+                    <h3>Premier Care Plus</h3>
+                    <p>The next level in device protection, assistance & maintenance</p>
+                    <button type="button" class="btn btn-outline-dark btn-light btn-lg bt">Learn
+                      More</button>
+                  </div>
+                </div>
+                <div class="item-div">
+                  <div class="img_container5"></div>
+                  <div class="details">
+                    <h3>Sustainability Solutions</h3>
+                    <p>Smarter climate action across the IT lifecycle</p>
+                    <button type="button" class="btn btn-outline-dark btn-light btn-lg">Learn More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-prev animate__animated animate__fadeInLeft" id="prevBtn">❮</button>
+            <button class="btn-next animate__animated animate__fadeInRight" id="nextBtn">❯</button>
+  
+          </div>
+  
+    </div>
       <!-- FOOTER -->
       <footer>
         <div class="footer-1">
@@ -1019,7 +1494,51 @@
       </div>
   </div>
         
-    
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slideContainer = document.querySelector('.carousel-slide');
+            const itemDivs = document.querySelectorAll('.item-div');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+
+            function showDiv(index) {
+                slideContainer.style.transform = 'translateX(' + (-index * 35) + '%)';
+                if (currentIndex === 0) {
+                    prevBtn.style.display = 'none';
+                } else {
+                    prevBtn.style.display = 'block';
+                }
+
+                if (currentIndex === 2) {
+                    nextBtn.style.display = 'none';
+                } else {
+                    nextBtn.style.display = 'block';
+                }
+            }
+
+            function nextDiv() {
+                currentIndex = (currentIndex + 1) % itemDivs.length;
+                showDiv(currentIndex);
+            }
+
+            function prevDiv() {
+                currentIndex = (currentIndex - 1 + itemDivs.length) % itemDivs.length;
+                showDiv(currentIndex);
+            }
+
+            nextBtn.addEventListener('click', nextDiv);
+            prevBtn.addEventListener('click', prevDiv);
+
+            // Initial display
+            showDiv(currentIndex);
+        });
+    </script>
+
       
   </body>
 </html>
