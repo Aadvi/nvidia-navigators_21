@@ -521,11 +521,11 @@
       column-gap: 25px;
     }
 
-    .co_container {
+    /* .co_container {
       height: 20vh;
       width: 100%;
       background-color: red;
-    }
+    } */
 
     .inf-div {
       width: 48%;
@@ -605,15 +605,7 @@
         width: 160%;
       }
 
-      .carousel-item {
-        width: 100%;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        gap: 30px;
-        align-items: center;
-      }
+       
 
       .carousel-control-prev,
       .carousel-control-next {
@@ -719,6 +711,7 @@
         padding: 7px;
       }
     }
+    
     </style>
   </head>
   <body>
@@ -856,21 +849,39 @@
         <!-- CAROUSEL -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div  class="carousel-item active" style="width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 30px;
+        align-items: center;">
               <img
                 src="./assets/lenovo-carou-1.webp"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 30px;
+        align-items: center;">
               <img
                 src="./assets/lenovo-carou-2.avif"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style="width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 30px;
+        align-items: center;">
               <img
                 src="./assets/lenovo-carou-3.webp"
                 class="d-block w-100"
@@ -899,7 +910,8 @@
         </div>
       </header>
       <!-- Akshay's Code -->
-      <div class="container-fluid bg-light">
+      <div class="explore">
+        <div class="container-fluid  bg-light">
         <!-- flex coulmn for explore and second image div tag  -->
         <div class="d-flex flex-column py-4 c3">
           <h1>Explore Lenovo</h1>
@@ -1012,6 +1024,7 @@
             </div>
             <p>Deals</p>
           </div>
+      </div>
 
           <!-- second section of explore our range -->
         </div>
@@ -1224,8 +1237,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class = "container-fluid">
+      <div class = "container-fluid">
       <div class="cont">
         <div class="cont animate__animated animate__fadeIn">
           <h1>Infrastructure Solutions</h1>
@@ -1538,6 +1550,8 @@
             showDiv(currentIndex);
         });
     </script>
+    </div>
+    
 
       
   </body>
