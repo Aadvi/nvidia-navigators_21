@@ -25,8 +25,19 @@
     <style>
       /* Write your CSS code here */
        /* scroll code by akshay */
-       .trips{
+       @media (max-width: 768px) {
+        * {
+        flex-direction: column;
+        align-items: center;
+        }
+        .we-make-world{
+          
+        flex-direction: column;
+        align-items: center;
+        }
         
+      }
+        .trips{
         margin: auto;
        
         scale: .8;
@@ -85,7 +96,7 @@
       .overlay-white1 {
         position: absolute;
         height: 240px;
-        width: 280;
+        width: 280px;
         left: 604.98px;
         right: 435.02px;
         top: 120px;
@@ -95,7 +106,7 @@
       .overlay-white2 {
         position: absolute;
         height: 240px;
-        width: 280;
+        width: 280px;
         left: 604.98px;
         right: 435.02px;
         top: 390px;
@@ -396,7 +407,7 @@
         justify-content: center;
         gap: 30px;
         cursor: pointer;
-        margin-top: 15px;
+        margin-top: 50px;
       }
       .trips>div:hover{
         transform: scale(1.1);
@@ -802,8 +813,6 @@
                 transform: translateX(-100%);
             }
         }
-
-        
     </style>
 </head>
     <!-- Aaditya's Code -->
@@ -2226,8 +2235,9 @@
           <a href="#" class="see-all">See all</a>
         </div>
         
-        <div style="animation: anim2 linear forwards; animation-timeline: view(); margin-left: 375px;"><h3>Featured Trips</h3></div>
-        <div class="trips"  >
+       
+          <div style="animation: anim2 linear forwards; animation-timeline: view(); position: sticky; margin-left: 100px;"></div>
+        <div class="trips">
             
           <div class="card" style="width: 18rem; ">
            
@@ -2278,7 +2288,7 @@
               <span style="font-size: small;">4 days</span><span style="font-size: x-small; margin-left: 120px;">From</span><span style="font-size: small; font-weight: bold;">$769.25</span>
             </div>
         </div>
-      </div>
+      </div></div>
     </main>
     <!-- WE MAKE WORLD SECTION -->
     <div
@@ -2293,7 +2303,7 @@
       margin-bottom: 25px;
     "
   >
-    <img style="animation: anim2; animation-timeline: view();" src="./assets/weMakeWorldBg.jpg" alt="" />
+    <img src="./assets/weMakeWorldBg.jpg" alt="" />
     <!-- We Make World box -->
     <div class="overlay-we-make">
       <div>We Make World Travel Easy</div>
@@ -2566,6 +2576,7 @@
             </div>
         </div>
     </div>
+    <!-- <hr class="footer-line1"> -->
     <div class="footer">
       <div class="footer-content">
           <h1>Speak to our expert at 1-800-453-6744</h1>
