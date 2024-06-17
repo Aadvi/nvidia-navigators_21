@@ -25,14 +25,22 @@
     <style>
       /* Write your CSS code here */
        /* scroll code by akshay */
-       @keyframes anim2 {
-        from{
-            scale: .8; opacity:0;
+       .trips{
+        
+        margin: auto;
+       
+        scale: .8;
+        opacity: 0;
+        animation: fade linear forwards;
+        animation-timeline: view();
+        animation-range: 0px 50vh;
+      }
+      @keyframes fade{
+        100%{
+          scale: 1;
+          opacity: 1;
         }
-        to {
-            scale: 1.1; opacity: 1;
-        }
-       }
+    }
       
 
       /* Aaditya's Code */
@@ -47,9 +55,26 @@
 
       /* Swarnali's CSS */
       /* Swarnali's CSS */
+      .we-make-world{
+        display: block;
+        margin: auto;
+        height: 100vh;
+        scale: .8;
+        opacity: 0;
+        animation: fade linear forwards;
+        animation-timeline: view();
+        animation-range: 0px 50vh;
+      }
+      @keyframes fade{
+        100%{
+          scale: 1;
+          opacity: 1;
+        }
+    }
       .we-make-world {
         position: relative;
       }
+    
       .overlay-we-make {
         position: absolute;
         width: 439.98px;
