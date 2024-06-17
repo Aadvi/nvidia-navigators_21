@@ -190,7 +190,12 @@
           animation-play-state: paused;
         }
       }
-
+      .mini_ban {
+        animation: marquee 10s linear infinite;
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
       @keyframes marquee {
         0% {
           transform: translateX(0);
@@ -561,6 +566,7 @@
             font-size: 29.65px;
             font-weight: 700;
             line-height: 45px;
+            margin-top: 50px;
         }
         .c2 {
             display: flex;
@@ -602,6 +608,200 @@
             transform: scale(1.01);
         }
         /* Kunal's Code */
+        .footer {
+          margin-top: 50px;
+            color: #000000;
+            padding: 40px 20px;
+            position: relative;
+            background-color: #ffffff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 80px;
+        }
+
+        .footer h4 {
+            margin: 10px 0;
+        }
+
+        .footer .columns {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .footer .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .column ul li {
+            margin: 10px 0;
+        }
+
+        .footer .newsletter input {
+            padding: 10px;
+            width: 80%;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+
+        .footer .newsletter button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #fcd022;
+            border: #000000;
+            color: #000000;
+            transition: background-color 0.3s;
+            border-radius: 20px;
+        }
+
+        .footer .newsletter button:hover {
+            background-color: #068d1b;
+            color: white;
+        }
+
+        .footer .payment-methods {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 60px;
+            border-radius: 50px;
+            border: 3px solid #000000;
+            overflow: hidden;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .footer .payment-methods img {
+            max-width: 60px;
+            margin: 0 5px;
+        }
+
+        .footer .copyright {
+            margin-top: 20px;
+        }
+
+        footer {
+            width: 100vw;
+            position: relative;
+            bottom: 0;
+        }
+
+        footer div {
+            background-color: #ffffff;
+            margin: -5px 0 0 0;
+            padding: 0;
+            color: #000000;
+            text-align: center;
+        }
+
+        svg {
+            width: 100%;
+            overflow: visible;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .wave {
+            animation: wave 3s linear infinite;
+            fill: #9bb8f1;
+        }
+
+        .drop {
+            fill: #9bb8f1;
+            animation: drop 3.2s linear infinite normal;
+            stroke: #9bb8f1;
+            stroke-width: 0.5;
+            transform: translateY(25px);
+            transform-box: fill-box;
+            transform-origin: 50% 100%;
+        }
+
+        .drop1 {}
+        .drop2 {
+            animation-delay: 3s;
+            animation-duration: 3s;
+        }
+
+        .drop3 {
+            animation-delay: -2s;
+            animation-duration: 3.4s;
+        }
+
+        .drop4 {
+            animation-delay: 1.7s;
+        }
+
+        .drop5 {
+            animation-delay: 2.7s;
+            animation-duration: 3.1s;
+        }
+
+        .drop6 {
+            animation-delay: -2.1s;
+            animation-duration: 3.2s;
+        }
+
+        .gooeff {
+            filter: url(#goo);
+        }
+
+        #wave2 {
+            animation-duration: 5s;
+            animation-direction: reverse;
+            opacity: 0.6;
+        }
+
+        #wave3 {
+            animation-duration: 7s;
+            opacity: 0.5;
+        }
+
+        @keyframes drop {
+            0% {
+                transform: translateY(25px);
+            }
+            30% {
+                transform: translateY(-10px) scale(0.1);
+            }
+            30.001% {
+                transform: translateY(25px) scale(1);
+            }
+            70% {
+                transform: translateY(25px);
+            }
+            100% {
+                transform: translateY(-10px) scale(0.1);
+            }
+        }
+
+        @keyframes wave {
+            to {
+                transform: translateX(-100%);
+            }
+        }
 
         
     </style>
@@ -793,7 +993,7 @@
                     alt="..."
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5 class="fs-1 pacifico-regular">Third slide label</h5>
+                    <h5 class="fs-1 pacifico-regular">Northern Lights</h5>
                     <p class="fs-3">
                       Chasing the dancing colors of the sky.
                     </p>
@@ -2366,6 +2566,106 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+      <div class="footer-content">
+          <h1>Speak to our expert at 1-800-453-6744</h1>
+          <div class="columns">
+              <div class="column">
+                  <h4>Contact</h4>
+                  <p>328 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+                  <p>hi@viatours.com</p>
+              </div>
+              <div class="column">
+                  <h4>Company</h4>
+                  <ul>
+                      <li>About Us</li>
+                      <li>Tourz Reviews</li>
+                      <li>Contact Us</li>
+                      <li>Travel Guides</li>
+                      <li>Data Policy</li>
+                      <li>Cookie Policy</li>
+                      <li>Legal</li>
+                      <li>Sitemap</li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h4>Support</h4>
+                  <ul>
+                      <li>Get in Touch</li>
+                      <li>Help Center</li>
+                      <li>Live Chat</li>
+                      <li>How It Works</li>
+                  </ul>
+              </div>
+              <div class="column newsletter">
+                  <h4>Newsletter</h4>
+                  <p>Subscribe to the free newsletter and stay up to date</p>
+                  <input type="email" placeholder="Your email address">
+                  <button>Send</button>
+              </div>
+              <div class="column">
+                  <h4>Mobile Apps</h4>
+                  <ul>
+                      <li>iOS App</li>
+                      <li>Android App</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="columns">
+              <div class="payment-methods">
+                  <img src="visa-logo-png-2013.png" alt="Visa">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="MasterCard">
+                  <img src="580b57fcd9996e24bc43c530.png" alt="PayPal">
+                  <img src="620670b9d7b91b0004122617.png" alt="American Express">
+              </div>
+          </div>
+          <div class="copyright">
+              <p><h4><u>© Copyright Viatours 2024</u></h4></p>
+          </div>
+      </div>
+  </div>
+  
+  <footer>
+  <svg viewBox="0 0 120 28">
+      <defs>
+          <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="
+                  1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 13 -9" result="goo" />
+              <xfeBlend in="SourceGraphic" in2="goo" />
+          </filter>
+          <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+      </defs>
+      <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+      <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+      <g class="gooeff" filter="url(#goo)">
+          <circle class="drop drop1" cx="20" cy="2" r="8.8"></circle>
+          <circle class="drop drop2" cx="25" cy="2.5" r="7.5"></circle>
+          <circle class="drop drop3" cx="16" cy="2.8" r="9.2"></circle>
+          <circle class="drop drop4" cx="18" cy="2" r="8.8"></circle>
+          <circle class="drop drop5" cx="22" cy="2.5" r="7.5"></circle>
+          <circle class="drop drop6" cx="26" cy="2.8" r="9.2"></circle>
+          <circle class="drop drop1" cx="5" cy="4.4" r="8.8"></circle>
+          <circle class="drop drop2" cx="5" cy="4.1" r="7.5"></circle>
+          <circle class="drop drop3" cx="8" cy="3.8" r="9.2"></circle>
+          <circle class="drop drop4" cx="3" cy="4.4" r="8.8"></circle>
+          <circle class="drop drop5" cx="7" cy="4.1" r="7.5"></circle>
+          <circle class="drop drop6" cx="10" cy="4.3" r="9.2"></circle>
+          <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"></circle>
+          <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"></circle>
+          <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"></circle>
+          <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"></circle>
+          <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"></circle>
+          <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"></circle>
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1"></use>
+      </g>
+  </svg>
+  </footer>
+  
+  
   </body>
  </html>       
 
